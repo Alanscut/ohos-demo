@@ -7,7 +7,13 @@
       "name": "1.0.0"
     }
   },
-  "deviceConfig": {},
+  "deviceConfig": {
+    "default": {
+      "network": {
+        "cleartextTraffic": true
+      }
+    }
+  },
   "module": {
     "package": "com.example.ohos_demo",
     "name": ".MyApplication",
@@ -42,6 +48,18 @@
         "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "using axios",
+        "usedScene": {
+          "ability": [
+            "com.example.ohos_demo.MainAbility",
+            "com.example.ohos_demo.MyApplication"
+          ]
+        }
       }
     ],
     "js": [
