@@ -6,7 +6,7 @@ export default function exampleJsunit() {
     it('app_info_test_001', 0, function () {
       var info = app.getInfo()
       expect("1.0").assertEqual('1.0')
-      expect(info.versionCode).assertEqual('3')
+      expect(info.versionCode).assertEqual(1000000)
     })
   })
 }
