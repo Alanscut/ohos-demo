@@ -13,3 +13,20 @@
 
 > 默认模板创建的ETS工程（API 7）的`ohosTestImplementation` 版本号为`1.0.0.100`，需要更改为 `2.0.0.100`
 
+## 3.旧版IDE上打开最新版IDE上创建的工程提示gradle版本过低
+
+> 通常这种提示版本过低的原因是项目配置文件build.gradle中的插件版本号不兼容导致的，如最新的 `3.0.0.800` 创建的项目部分默认参数如下：
+
+```
+classpath 'com.huawei.ohos:hap:3.0.5.2'
+classpath 'com.huawei.ohos:decctest:1.2.7.2'
+```
+
+而在上一个版本 `3.0.0.691` 中的默认参数为：
+
+```
+classpath 'com.huawei.ohos:hap:3.0.3.4'
+classpath 'com.huawei.ohos:decctest:1.2.6.0'
+```
+
+只有将 `build.gradle` 中的版本号调整到与当前 IDE 版本所匹配的版本号即可正常工作。最简单的做法就是在当前 IDE 中创建一个新的模板项目，然后配置文件中的参数拷贝到需要更改版本号的项目中。
