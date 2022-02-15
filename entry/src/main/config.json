@@ -69,7 +69,9 @@
           "type": "pageAbility"
         },
         "pages": [
-          "pages/index"
+          "pages/index",
+          "pages/requestDem",
+          "pages/propAndLink"
         ],
         "name": "default",
         "window": {
