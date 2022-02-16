@@ -10,14 +10,19 @@ struct Index {
             uri: 'pages/requestDem'
           })
         })
-//        Button('prop').onClick(() => {
-//          router.push({
-//            uri: 'pages/propAndLink'
-//          })
-//        })
+        Button('space problem').onClick(() => {
+          router.push({
+            uri: 'pages/spaceProblem'
+          })
+        })
+        Button('watch prop problem').onClick(() => {
+          router.push({
+            uri: 'pages/watchPropProblem'
+          })
+        })
     }
     .width('100%')
     .height('100%')
-    .margin(15)
+    .margin({top:30})
   }
 }

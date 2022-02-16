@@ -71,7 +71,8 @@
         "pages": [
           "pages/index",
           "pages/requestDem",
-          "pages/propAndLink"
+          "pages/spaceProblem",
+          "pages/watchPropProblem"
         ],
         "name": "default",
         "window": {
