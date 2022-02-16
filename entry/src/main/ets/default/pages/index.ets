@@ -20,6 +20,16 @@ struct Index {
             uri: 'pages/watchPropProblem'
           })
         })
+        Button('offset problem of customDialog').onClick(() => {
+          router.push({
+            uri: 'pages/customDialogOffsetProblem'
+          })
+        })
+        Button('position problem').onClick(() => {
+          router.push({
+            uri: 'pages/positionProblem'
+          })
+        })
     }
     .width('100%')
     .height('100%')

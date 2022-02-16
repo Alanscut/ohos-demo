@@ -72,7 +72,9 @@
           "pages/index",
           "pages/requestDem",
           "pages/spaceProblem",
-          "pages/watchPropProblem"
+          "pages/watchPropProblem",
+          "pages/customDialogOffsetProblem",
+          "pages/positionProblem"
         ],
         "name": "default",
         "window": {
