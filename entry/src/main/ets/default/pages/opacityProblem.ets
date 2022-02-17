@@ -1,0 +1,26 @@
+import router from '@system.router'
+
+@Entry
+@Component
+struct opacityProblem {
+  @State value: number | Array<number> = 40
+
+  build() {
+    Flex({
+      direction: FlexDirection.Column,
+      alignItems: ItemAlign.Center,
+      justifyContent: FlexAlign.Center
+    }) {
+      Button('back home').onClick(() => {
+        router.back()
+      }).offset({ x: 10,y: 10 })
+      Text('opacity属性在预览时生效，但是在本地sdk为8时模拟器上不生效')
+        .fontSize(30)
+      Button('test')
+      Button('test')
+        .opacity(0.5)
+    }
+    .width('100%')
+    .height('100%')
+  }
+}

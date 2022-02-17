@@ -30,6 +30,21 @@ struct Index {
             uri: 'pages/positionProblem'
           })
         })
+        Button('type problem').onClick(() => {
+          router.push({
+            uri: 'pages/typeProblem'
+          })
+        })
+        Button('width problem').onClick(() => {
+          router.push({
+            uri: 'pages/widthProblem'
+          })
+        })
+        Button('opacity problem').onClick(() => {
+          router.push({
+            uri: 'pages/opacityProblem'
+          })
+        })
     }
     .width('100%')
     .height('100%')

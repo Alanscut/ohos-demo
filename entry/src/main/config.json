@@ -74,7 +74,10 @@
           "pages/spaceProblem",
           "pages/watchPropProblem",
           "pages/customDialogOffsetProblem",
-          "pages/positionProblem"
+          "pages/positionProblem",
+          "pages/typeProblem",
+          "pages/widthProblem",
+          "pages/opacityProblem"
         ],
         "name": "default",
         "window": {
